@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Scroll"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/up_down"
+            android:layout_marginLeft="@dimen/left_right"
+            android:layout_marginRight="@dimen/left_right"
+            android:layout_marginBottom="@dimen/up_down"
+            android:background="@drawable/border">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/year"
+                android:entries="@array/year"
+                android:layout_marginLeft="@dimen/left_right"
+                android:background="@color/white"
+                android:layout_gravity="left|center_vertical"
+                >
+            </Spinner>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/term"
+                android:entries="@array/term"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                >
+            </Spinner>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询"
+                android:id="@+id/query"
+                android:drawableLeft="@drawable/button_search"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="@dimen/up_down"
+                android:layout_marginBottom="@dimen/up_down"
+                android:layout_marginRight="@dimen/up_down"
+                android:background="@color/white"
+                />
+        </LinearLayout>
+        <com.example.luxiansheng.query.model.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ScoreTitle"
+            android:layout_marginTop="@dimen/up_down"
+            android:layout_marginLeft="@dimen/left_right"
+            android:layout_marginRight="@dimen/left_right"
+            android:gravity="center"
+            android:text="成绩如下"
+            android:textColor="@color/cadetblue"
+            android:textSize="20sp"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ScoreView"
+            android:layout_marginTop="@dimen/up_down"
+            android:background="@drawable/border"
+            android:layout_marginLeft="@dimen/left_right"
+            android:layout_marginRight="@dimen/left_right"
+            android:divider="@color/cadetblue"
+            android:dividerHeight="1dp">
+        </ListView>
+
+    </LinearLayout>
+
+</ScrollView>

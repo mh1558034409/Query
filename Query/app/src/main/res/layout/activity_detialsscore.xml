@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/Scroll">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <com.example.luxiansheng.query.model.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/InforTitle"
+                android:layout_marginTop="@dimen/up_down"
+                android:layout_marginLeft="@dimen/left_right"
+                android:layout_marginRight="@dimen/left_right"
+                android:gravity="center"
+                android:textColor="@color/cadetblue"
+                />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/details"
+                android:background="@drawable/border"
+                android:divider="@color/cadetblue"
+                android:dividerHeight="1dp"
+                android:layout_marginTop="@dimen/up_down"
+                android:layout_marginLeft="@dimen/left_right"
+                android:layout_marginRight="@dimen/left_right">
+            </ListView>
+
+    </LinearLayout>
+
+</ScrollView>

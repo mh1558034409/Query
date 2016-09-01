@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Scroll">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stu"
+                    android:layout_marginLeft="@dimen/left_right"
+                    android:layout_marginRight="@dimen/left_right"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="@dimen/up_down">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stuImage"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/left_right"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/stuName"
+                        android:layout_marginRight="@dimen/left_right"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/cadetblue"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/stu"
+                    android:layout_marginTop="@dimen/up_down"
+                    android:layout_marginLeft="@dimen/left_right"
+                    android:layout_marginRight="@dimen/left_right">
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/infor"
+                        android:divider="@color/cadetblue"
+                        android:dividerHeight="1dp"
+                        android:background="@drawable/border">
+
+                    </ListView>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
